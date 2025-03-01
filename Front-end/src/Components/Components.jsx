@@ -8,6 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../assets/Images/Logo.png'
 import '../assets/css/main.css'
+import videoDescription from '../assets/video/rain.mp4'
 
 
 
@@ -50,7 +51,7 @@ export function Navigation() {
     
   )
 }
-//Footer from MDB
+//Footer from boostrap
 
 export function Footerbar(){
   return(
@@ -60,7 +61,7 @@ export function Footerbar(){
       {/* <!--Grid row--> */}
       <div className="row">
         {/* <!--Grid column--> */}
-        <div className="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <div className="col-lg-6 col-md-12 mb-4 mb-md-0 footerDescription">
           <h5 className="text-uppercase"><img src={logo} alt="" className='logo' srcset="" /> Tujenge Kazi</h5>
   
           <p>
@@ -128,3 +129,22 @@ export function Footerbar(){
 
 }
 
+//section one in home page (description)
+
+
+export function SectionOneDescription() {
+
+
+  
+  return (
+    <div>
+    {/* <!-- The video --> */}
+<video autoPlay muted loop  className='videoDescription'>
+  <source src={videoDescription} type="video/mp4"/>
+</video>
+    <div>
+      
+    </div>
+    </div>
+  )
+}
